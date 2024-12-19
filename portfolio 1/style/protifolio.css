@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+body{
+    background: linear-gradient(45deg);
+    background-color: #2B2425;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+.card{
+    background-color: #434140;
+    /*#575252*/
+    width: 296px;
+    padding: 3rem;
+    border-radius: 20px;
+    min-height: 400px;
+    position: relative;
+    color: #fff;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 2px #86797d solid;
+    margin-top: 350px;
+}
+
+.card .picture{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.card .picture img{
+    border-radius: 25px;
+    width: 160px;
+    height: 170px;
+    background-color: #807B7F;
+
+}
+
+.card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.profile-details .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-details .intro h2{
+    margin-top: 20px;
+}
+.profile-details .intro h5{
+    background-color: #6a6669;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 8px;
+}
+.profile-details .intro .social{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.profile-details.intro.social i{
+    color: #ddd;
+    font-size: 16px;
+    background-color: #222;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.profile-details .intro .social i:hover{
+    transform: scale(1.2);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.profile-details .contact-info{
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.profile-details .contact-info .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    width: 230px;
+}
+.contact-info .row .icon{
+    height: 40px;
+    width:  100%;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+    margin-right: 30px;
+    background-color: #3f3d3c;
+    align-items: center;
+}
+
+.row .icon:hover{
+    transform: scale(1.2);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.row .content{
+    min-width: 70%;
+}
+.row .content span{
+    font-size: 12px;
+}
+.hori{
+    width: 246px;
+    border: 1px solid #807B7F;
+    margin-top: 17px;
+    border-radius: 3px;
+}
+.imoge{
+    padding-right: 14px;
+}
+.about{
+    background-color: #434140;
+    max-width: 800px;
+    width: 800px;
+    border-radius: 20px;    
+    border: 2px #86797d solid;
+    margin-top: 365px;
+    height: 800px;
+}
+.about h1{
+    color: #f2f2f2;
+    margin-bottom: 1.1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+    padding: 2rem 3rem;
+}
+.about h1::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -50%;
+    width: 45%;
+    height: 3px;
+    background-color: linear-gradient(45deg,#f64c57,#e21b5a);
+}
+.about h2{
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    margin-left: 1rem;
+}
+.about p{
+    color: #fff;
+    margin: 1.5rem 1rem;
+}
+.horiz{
+    width: 40px;
+    border: 3px solid #fabd07;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    margin-top: 10px;
+}
+ul a{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 25px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 3px;
+}
+ul a:hover{
+    cursor: pointer;
+    color: #e6ad04;
+}
+.right-section{
+    background-color: #6a6669;
+    border-radius: 0px 15px 0px 15px;
+    height: 55px;
+    width: 450px;
+    align-items: center;
+    border: 2px solid #86797d;
+    color: #fff;
+
+    overflow-x: auto;
+    overscroll-behavior-inline:contain ;
+}
+
+.sect-page3 .navbar2{
+    display: flex;
+    margin-top: 15px;
+}
+.sect-page3 ul{
+    display: flex;
+    list-style: none;
+    margin-left: 3px;
+
+}
+.sect-page3 ul a{
+    padding-left: 16px;
+    color: #fff;
+}
+.sect-page3 ul a:hover{
+    cursor: pointer;
+    color: #fabd07;
+}
+.sect-page3 .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.sect-page3 .image img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 13px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+    
+}
+
+
+.button8{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0; 
+    transition: 0.6s;
+}
+div img:hover{
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+.image .image7:hover{
+    position: relative;
+}
+.image .overlay .hover2 .hover3{
+    position: absolute;
+    right: 40px;
+    background-color: #727170;
+    color: #fabd07;
+    cursor: pointer;
+    margin-right: 295px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.9;
+    display: none;
+    top: 1025px;
+}
+.image .hover2 .hover3:hover{
+    display: block;
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+.image .image1:hover{
+    position: relative;
+}
+.image .overlay .hover2 .hover4{
+    position: absolute;
+    right: 40px;
+    top:575px;
+    background-color: #727170;
+    color: #fabd07;
+    cursor: pointer;
+    margin-right: 738px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.9;
+    display: none;
+}
+.image .overlay .hover2 .hover4:hover{
+    display: block;
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+.image .image2:hover{
+    position: relative;
+}
+.image .overlay .hover2 .hover5{
+    position: absolute;
+    right: 40px;
+    top:575px;
+    background-color: #727170;
+    color: #fabd07;
+    cursor: pointer;
+    margin-right: 515px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.9;
+    display: none;
+}
+.image .overlay .hover2 .hover5:hover{
+    display: block;
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+.image .image3:hover{
+    position: relative;
+}
+.image .overlay .hover2 .hover6{
+    position: absolute;
+    right: 40px;
+    top:575px;
+    background-color: #727170;
+    color: #fabd07;
+    cursor: pointer;
+    margin-right: 298px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.9;
+    display: none;
+}
+.image .overlay .hover2 .hover6:hover{
+    display: block;
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+.image .image5:hover{
+    position: relative;
+}
+.image .overlay .hover2 .hover7{
+    position: absolute;
+    right: 40px;
+    top:800px;
+    background-color: #727170;
+    color: #fabd07;
+    cursor: pointer;
+    margin-right: 738px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    opacity:0.9;
+    display: none;
+}
+.image .overlay .hover2 .hover7:hover{
+    display: block;
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+.image .image6:hover{
+    position: relative;
+}
+.image .overlay .hover2 .hover8{
+    position: absolute;
+    right: 40px;
+    top:800px;
+    background-color: #727170;
+    color: #fabd07;
+    cursor: pointer;
+    margin-right: 515px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.9;
+    display: none;
+}
+.image .overlay .hover2 .hover8:hover{
+    display: block;
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+.image .image8:hover{
+    position: relative;
+}
+.image .overlay .hover2 .hover9{
+    position: absolute;
+    right: 40px;
+    top:800px;
+    background-color: #727170;
+    color: #fabd07;
+    cursor: pointer;
+    margin-right: 298px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.9;
+    display: none;
+}
+.image .overlay .hover2 .hover9:hover{
+    display: block;
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+.image .image9:hover{
+    position: relative;
+}
+.image .overlay .hover2 .hover10{
+    position: absolute;
+    right: 40px;
+    top:1025px;
+    background-color: #727170;
+    color: #fabd07;
+    cursor: pointer;
+    margin-right: 738px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.9;
+    display: none;
+}
+.image .overlay .hover2 .hover10:hover{
+    display: block;
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+.image .image10:hover{
+    position: relative;
+}
+.image .overlay .hover2 .hover11{
+    position: absolute;
+    right: 40px;
+    top:1025px;
+    background-color: #727170;
+    color: #fabd07;
+    cursor: pointer;
+    margin-right: 515px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.9;
+    display: none;
+}
+.image .overlay .hover2 .hover11:hover{
+    display: block;
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+
+
+.image .paragraph6 {
+    text-align:start;
+    display: flex;
+}
+.sect-page3 .navbar2 ul .all2{
+    color: #fabd07;
+}
